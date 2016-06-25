@@ -31,14 +31,14 @@ export class Index extends React.Component {
       return response.json();
     }).then(function(json) {
       photo = json.photos.photo[0];
-      container.style.backgroundImage = `url(https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_h.jpg)`;
+      photo.url = `url(https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_h.jpg)`;
       that.setState(photo);
     });
   }
 
   render() {
     return (
-      <div className="view-index">
+      <div className="view-index" style={{backgroundImage: this.state.url}}>
         <h1 className="view-index__heading">{this.state.title}</h1>
         <p className="view-index__copy">Born {moment(this.state.datetaken).format("MMMM Do YYYY")}</p>
       </div>
