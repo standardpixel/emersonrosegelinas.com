@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
 
 $padding: 40px;
 $accent-color: rgb(140, 182, 187);
@@ -15,8 +15,9 @@ $big-font: 34px;
   width: 100%;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 4px gray;
-  font-family: "Pacifico", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-shadow: 2px 2px 8px rgba(255, 0, 127, .5);
+  font-weight: 100;
+  font-family: "Tangerine", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .emmy-site {
@@ -34,13 +35,20 @@ $big-font: 34px;
 
     &__heading {
       @extend %text-thing;
-      font-weight: 200;
-      font-size: 4vw;
+      font-size: 5vw;
+
+      @media (max-width: 640px) {
+        font-size: 40px;
+      }
     }
 
     &__copy {
       @extend %text-thing;
-      font-size: 2vw;
+      font-size: 2.5vw;
+
+      @media (max-width: 640px) {
+        font-size: 20px;
+      }
     }
   }
 }
