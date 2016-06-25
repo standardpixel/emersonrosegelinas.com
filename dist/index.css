@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Tangerine);/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Marcellus+SC);/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
@@ -371,9 +371,9 @@ textarea {
   width: 100%;
   text-align: center;
   color: white;
-  text-shadow: 2px 2px 8px rgba(255, 0, 127, 0.5);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   font-weight: 100;
-  font-family: "Tangerine", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  font-family: "Marcellus SC", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .emmy-site {
   height: 100vh; }

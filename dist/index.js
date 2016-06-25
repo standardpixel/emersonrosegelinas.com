@@ -108,7 +108,7 @@
 	        return response.json();
 	      }).then(function (json) {
 	        photo = json.photos.photo[0];
-	        container.style.backgroundImage = 'url(https://farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_h.jpg)';
+	        photo.url = 'url(https://farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_h.jpg)';
 	        that.setState(photo);
 	      });
 	    }
@@ -117,7 +117,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'view-index' },
+	        { className: 'view-index', style: { backgroundImage: this.state.url } },
 	        _react2.default.createElement(
 	          'h1',
 	          { className: 'view-index__heading' },
