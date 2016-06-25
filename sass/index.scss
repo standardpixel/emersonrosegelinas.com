@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,300,200);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 $padding: 40px;
 $accent-color: rgb(140, 182, 187);
@@ -6,9 +6,41 @@ $dark-color: rgb(51, 51, 51);
 $primary-font: 16px;
 $big-font: 34px;
 
-$desktop-bigfont-breakpoint-v: 413px;
-$mobile-breakpoint-h: 1023px;
+* {
+  box-sizing: border-box;
+}
+
+%text-thing {
+  max-width: 1024px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 4px gray;
+  font-family: "Pacifico", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
 
 .emmy-site {
-  
+  height: 100vh;
+
+  .view-index {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    &__heading {
+      @extend %text-thing;
+      font-weight: 200;
+      font-size: 4vw;
+    }
+
+    &__copy {
+      @extend %text-thing;
+      font-size: 2vw;
+    }
+  }
 }

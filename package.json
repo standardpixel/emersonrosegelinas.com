@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --port 8000",
     "build": "webpack",
-    "deploy": "git push origin `git subtree split --prefix dist photos-react`:gh-pages --force"
+    "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,9 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "normalize.css": "^4.1.1"
+    "moment": "^2.13.0",
+    "normalize.css": "^4.1.1",
+    "react": "^15.1.0",
+    "whatwg-fetch": "^1.0.0"
   }
 }
