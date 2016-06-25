@@ -1,0 +1,42 @@
+{
+  "name": "emersonrosegelinas.com",
+  "version": "1.0.0",
+  "description": "A website for Emmy!",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --port 8000",
+    "build": "webpack",
+    "deploy": "git push origin `git subtree split --prefix dist photos-react`:gh-pages --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standardpixel/emersonrosegelinas.com"
+  },
+  "keywords": [],
+  "author": "info@standardpixel.com",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.8.0",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "handlebars": "^4.0.5",
+    "lodash.merge": "^4.3.5",
+    "node-sass": "^3.7.0",
+    "react-dom": "^15.0.2",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
+  }
+}
