@@ -40,7 +40,10 @@ module.exports = {
       "default": {
         "title": "Emerson Rose Gelinas"
       },
-    }, './base-page-template.handlebars'),
+    }, {
+      "template": "./base-page-template.handlebars",
+      "ignore-extensions": ["scss", "css", "png"]
+    }),
     new CopyWebpackPlugin([{from: './CNAME'},{from: './static', to: 'static'}]),
     new ExtractTextPlugin("[name].css", {
       allChunks: true
