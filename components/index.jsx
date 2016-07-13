@@ -22,7 +22,7 @@ export class Index extends React.Component {
 
   render() {
     return (
-      <div className="view-index" style={{backgroundImage: this.state.url}}>
+      <div className="view-index" style={{backgroundImage: `url('${this.state.url}')`}}>
         <h1 className="view-index__heading">{this.state.title}</h1>
         <p className="view-index__copy">Born {this.state.dateString}</p>
       </div>
