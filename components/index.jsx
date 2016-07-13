@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import 'whatwg-fetch';
-import moment from 'moment';
-
 import 'normalize.css'
 import '../sass/index.scss';
 
