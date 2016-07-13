@@ -38,9 +38,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "moment": "^2.14.1",
     "normalize.css": "^4.2.0",
-    "react": "^15.2.1",
-    "whatwg-fetch": "^1.0.0"
+    "react": "^15.2.1"
   }
 }
